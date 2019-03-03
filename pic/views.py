@@ -3,7 +3,7 @@ from django.http  import HttpResponse
 import datetime as dt
 
 # Create your views here.
-def welcome(request):
+def landing(request):
     date = dt.date.today()
     html = f'''
         <html>

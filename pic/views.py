@@ -5,4 +5,4 @@ import datetime as dt
 # Create your views here.
 def landing(request):
     date = dt.date.today()
-    return render (request,'landing.html')
+    return render (request,'landing.html',{"date":date})

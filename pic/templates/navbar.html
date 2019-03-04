@@ -1,16 +1,31 @@
+{% load bootstrap3 %}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  {% block styles %}
+  {% bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'CSS/landing.css' %}">
+  {% endblock %}
+  <title>Piclab</title>
 </head>
 
 <body>
-  <nav style='background-color:white;' class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{% url 'landing'%}">Home</a>
+  {%block content%}
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="closeup" align="center">
+      <ul>
+        <li> <a class="navbar-brand" href="{% url 'landing'%}">HOME</a></li>
+        <li><a href="#" class="navbar-brand">SIGNIN</a> </li>
+        <li><a href="#" class="navbar-brand">SIGNUP</a> </li>
+      </ul>
+
+    </div>
   </nav>
+  {% endblock%}
 </body>
 
 </html>

@@ -10,6 +10,7 @@
   {% block styles %}
   {% bootstrap_css %}
   <link rel="stylesheet" href="{% static 'CSS/landing.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   {% endblock %}
 
 
@@ -17,31 +18,6 @@
 
 <body>
   {% block content %}
-  <div class="row">
-    {% include "navbar.html" %}
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 style="color:black;" class='text-center'>Piclab</h1>
-  </div>
-
-<div class="footer">
-  <footer>
-    <p style="float:right;">{{date|date:"l d-F Y"}}</p>
-  </footer>
-</div>
-
   {%endblock%}
 
   {% block scripts %}

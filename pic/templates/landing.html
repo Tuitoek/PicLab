@@ -25,11 +25,9 @@
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <hr>
+      <hr style="width:30%;">
       <h1 style="color:white;" class='text-center'>Piclab</h1>
-      <hr>
+      <hr style="width:30%;">
       <br>
       <br>
       <br>
@@ -45,25 +43,15 @@
   <br>
   <br>
   <br>
-  <div class="categories">
-    <section>
-      <p style="font-size:20px;">Let's get started by posting many photos</p>
-      <div class="images">
-        <div class="food ">
-          <p>Food</p>
-          <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height=70%>
+
+  <section>
+    <div class="button" align="center">
+        <button style="background-color:#09181D;" class="btn btn-basic" name="button"><a style="color:white;" href="{% url 'gallery'%}">Get Started</a></button>
+    </div>
 
 
-        </div>
-    </section>
+  </section>
 
-  </div>
-
-  <div class="footer">
-    <footer>
-      <p style="float:right;">{{date|date:"l d-F Y"}}</p>
-    </footer>
-  </div>
 
   {%endblock%}
 

@@ -1,0 +1,46 @@
+body{
+  font-family: 'Pacifico', cursive;
+}
+.row{
+  display:flex;
+  justify-content: space-around;
+}
+.wildlife{
+  display:flex;
+  justify-content:space-evenly;
+}
+.wildlife img{
+  margin: 20px;
+}
+.fashion{
+  display:flex;
+  justify-content: space-evenly;
+}
+.fashion img{
+  margin: 20px;
+}
+.food{
+  display:flex;
+  justify-content: space-evenly;
+}
+.food img{
+  margin: 20px;
+}
+.travel{
+  display:flex;
+  justify-content:space-evenly;
+}
+.travel img{
+  margin: 20px;
+}
+.city{
+  display:flex;
+  justify-content: space-evenly;
+}
+.city img{
+  margin: 20px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+}

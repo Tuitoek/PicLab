@@ -1,18 +1,76 @@
 {%extends 'base.html'%}
+{% load bootstrap3 %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>Piclab</title>
-  {% block content %}
-  {{block.super}}
+
+  {% block styles %}
+  {% bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'CSS/landing.css' %}">
   {% endblock %}
+
 
 </head>
 
 <body>
-  <h1>Piclab {{date|date:"l d-FY"}}</h1>
+  {% block content %}
+  <div class="row">
+    <section>
+      {% include "navbar.html" %}
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <h1 style="color:white;" class='text-center'>Piclab</h1>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="categories">
+    <section>
+      <p style="font-size:20px;">Let's get started by posting many photos</p>
+      <div class="images">
+        <div class="food ">
+          <p>Food</p>
+          <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" height=70%>
+
+
+        </div>
+    </section>
+
+  </div>
+
+  <div class="footer">
+    <footer>
+      <p style="float:right;">{{date|date:"l d-F Y"}}</p>
+    </footer>
+  </div>
+
+  {%endblock%}
+
+  {% block scripts %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  {% bootstrap_javascript %}
+  {% endblock %}
 </body>
 
 </html>

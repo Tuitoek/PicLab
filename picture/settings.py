@@ -59,16 +59,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tribune',
-        'USER': 'postgres',
-        'PASSWORD':'sarahjt12',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
 # Application definition
 
 INSTALLED_APPS = [

@@ -23,7 +23,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 if config('MODE')=="dev":
    DATABASES = {
        'default': {
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
+           'ENGINE':'django.db.backends.postgresql_psycopg2',
            'NAME': config('DB_NAME'),
            'USER': config('DB_USER'),
            'PASSWORD': config('DB_PASSWORD'),
@@ -59,7 +59,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'tribune',
+        'USER': 'postgres',
+        'PASSWORD':'sarahjt12',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 # Application definition
 
 INSTALLED_APPS = [

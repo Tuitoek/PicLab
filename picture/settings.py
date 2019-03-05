@@ -19,6 +19,8 @@ MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
+
+SECRET_KEY = '-77=wa^lw9udo5*1#e)1riao2s^_(v1@5w85wxxcx)2a^b36wm'
 # development
 if config('MODE')=="dev":
    DATABASES = {
